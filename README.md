@@ -13,6 +13,7 @@ Run Python application
 python3 simple.py
 ```
 The application can be accessed at `http://localhost/5000`
+
 Deactivate Virtual Enivronment
 ```
 deactivate
