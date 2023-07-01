@@ -8,13 +8,11 @@ This project is a simple python application written using flask framework to gre
 python -m venv venv
 source vnev/bin/activate
 ```
-
 #### Run Python application
 ```
 python3 simple.py
 ```
 The application can be accessed at `http://localhost/5000`
-
 #### Deactivate Virtual Enivronment
 ```
 deactivate
@@ -25,30 +23,25 @@ deactivate
 ```
 docker build -t simple-app:0.1 .
 ```
-
 #### Run Docker Container
 ```
 docker run -p 5000:5000 simple-app:0.1
 ```
-
 
 ### Deploy application on Minikube Kubernetes Cluster
 #### Start Minikube
 ```
 minikube start --driver=docker
 ```
-
 #### To deploy/apply application service on Kubernetes Cluster
 ```
 kubectl apply -f deployment.yaml
 ```
-
 #### To get a list of deployments and services
 ```
 kubectl get deployment
 kubectl get service
 ```
-
 #### Start the application service
 ```
 minikube service simple-app-service
